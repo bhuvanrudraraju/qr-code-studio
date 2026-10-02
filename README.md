@@ -1,3 +1,4 @@
+qr-code-studio-bhuvan.netlify.app
 # QR Code Studio
 
 A browser-only QR code generator and designer built with **React + Vite**. Enter content, style the code, preview it live, and download it as PNG or SVG. No backend, nothing is uploaded.
