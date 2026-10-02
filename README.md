@@ -46,32 +46,6 @@ src/
 
 QR matrices come from [`qrcode-generator`](https://www.npmjs.com/package/qrcode-generator). Drawing is custom, which is what enables patterns, gradients and logos.
 
-## Push to GitHub
-
-```bash
-cd qr-code-studio
-git init
-git add .
-git commit -m "Initial commit: QR Code Studio"
-git branch -M main
-# create an empty repo on github.com first, then:
-git remote add origin https://github.com/<your-username>/qr-code-studio.git
-git push -u origin main
-```
-
-## Deploy
-
-**Vercel**
-1. Import the GitHub repo at vercel.com/new
-2. Framework preset: *Vite* (auto-detected). Build command `npm run build`, output `dist`
-3. Deploy
-
-**Netlify**
-1. "Add new site" → "Import from Git" → pick the repo
-2. Settings are read from `netlify.toml` (build `npm run build`, publish `dist`)
-3. Deploy
-
-Add your live URL to this README afterwards.
 
 ## Testing checklist
 
@@ -96,6 +70,4 @@ Manual:
 - Logos over ~150 KB are not kept in the recent list (to stay within `localStorage` limits); the code itself is still restored.
 - Always test-scan a customized code before printing it.
 
-## License
 
-MIT
